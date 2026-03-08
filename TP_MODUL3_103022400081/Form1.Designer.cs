@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            lblOutput = new Label();
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
@@ -43,15 +43,15 @@
             button12 = new Button();
             SuspendLayout();
             // 
-            // label1
+            // lblOutput
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(331, 50);
-            label1.Name = "label1";
-            label1.Size = new Size(95, 20);
-            label1.TabIndex = 0;
-            label1.Text = "Label Output";
-            label1.Click += label1_Click;
+            lblOutput.AutoSize = true;
+            lblOutput.Location = new Point(331, 50);
+            lblOutput.Name = "lblOutput";
+            lblOutput.Size = new Size(17, 20);
+            lblOutput.TabIndex = 0;
+            lblOutput.Text = "0";
+            lblOutput.Click += label1_Click;
             // 
             // button1
             // 
@@ -71,6 +71,7 @@
             button2.TabIndex = 2;
             button2.Text = "2\r\n";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click_1;
             // 
             // button3
             // 
@@ -80,6 +81,7 @@
             button3.TabIndex = 3;
             button3.Text = "3\r\n";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click_1;
             // 
             // button4
             // 
@@ -89,6 +91,7 @@
             button4.TabIndex = 4;
             button4.Text = "4";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click_1;
             // 
             // button5
             // 
@@ -98,6 +101,7 @@
             button5.TabIndex = 5;
             button5.Text = "5";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click_1;
             // 
             // button6
             // 
@@ -107,6 +111,7 @@
             button6.TabIndex = 6;
             button6.Text = "6";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click_1;
             // 
             // button7
             // 
@@ -116,6 +121,7 @@
             button7.TabIndex = 7;
             button7.Text = "7";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click_1;
             // 
             // button8
             // 
@@ -125,6 +131,7 @@
             button8.TabIndex = 8;
             button8.Text = "8";
             button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click_1;
             // 
             // button9
             // 
@@ -134,6 +141,7 @@
             button9.TabIndex = 9;
             button9.Text = "9";
             button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click_1;
             // 
             // button10
             // 
@@ -143,6 +151,7 @@
             button10.TabIndex = 10;
             button10.Text = "+";
             button10.UseVisualStyleBackColor = true;
+            button10.Click += button10_Click;
             // 
             // button11
             // 
@@ -152,6 +161,7 @@
             button11.TabIndex = 11;
             button11.Text = "0";
             button11.UseVisualStyleBackColor = true;
+            button11.Click += button11_Click;
             // 
             // button12
             // 
@@ -161,6 +171,7 @@
             button12.TabIndex = 12;
             button12.Text = "=";
             button12.UseVisualStyleBackColor = true;
+            button12.Click += button12_Click;
             // 
             // Form1
             // 
@@ -179,7 +190,7 @@
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(label1);
+            Controls.Add(lblOutput);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -201,5 +212,6 @@
         private Button button10;
         private Button button11;
         private Button button12;
+        private Label lblOutput;
     }
 }
